@@ -36,4 +36,4 @@ In the sample output above:
 
 ## Task
 
-Complete the `Account` class in `account.h` and ensure that the program produces the expected output as shown in the sample above.
+Complete the `lab2exercise1.cpp` class in `account.h` and ensure that the program produces the expected output as shown in the sample above.
