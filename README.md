@@ -1,11 +1,8 @@
-# Lab-2-Templates
-Templates for Lab 2. These exercises address Classes and Objects in cpp
-
-## Bank Account Class Exercise
+# Bank Account Class Exercise
 
 This programming exercise is designed to help you practice creating a C++ class for a bank account. The exercise involves creating an `Account` class with various functionalities, including setting and getting the balance, depositing and withdrawing funds, and testing the class with a `main` function.
 
-### Instructions
+## Instructions
 
 1. Open the `account.h` file. This file contains the class definition for the `Account` class. Your task is to implement the class by filling in the TODO comments in the file. Follow the specifications provided in the comments.
 
@@ -13,7 +10,7 @@ This programming exercise is designed to help you practice creating a C++ class 
 
 3. The program will test the `Account` class using the provided `main` function. It will perform various operations on two accounts and display the results.
 
-### Sample Input and Output
+## Sample Input and Output
 
 Here's a sample input and output based on the comments in the solution:
 
@@ -37,6 +34,6 @@ In the sample output above:
 - An attempt to withdraw $1500 from Account 2 results in an "Insufficient funds!" message.
 - The destructor messages indicate that both accounts are being destroyed when the program exits.
 
-### Task
+## Task
 
 Complete the `Account` class in `account.h` and ensure that the program produces the expected output as shown in the sample above.
