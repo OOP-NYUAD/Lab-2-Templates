@@ -1,32 +1,36 @@
-//This programming exercise is designed to help you practice creating a C++ class for a bank account.
-//The exercise involves creating an Account class with various functionalities, 
-//including setting and getting the balance, depositing and withdrawing funds,
-//and testing the class with a main function.
-//First, you would need to complete the "account.h" file before testing it using "lab2exercise1.cpp"    
-
 #include <iostream>
 #include "account.h"
 
 int main() {
-    // TODO: Create an Account object using the default constructor.
-    
-    // TODO: Create another Account object with an initial balance of $1000.
+    // Create an Account object using the default constructor.
+    Account account1;
 
-    // TODO: Test the 'getBalance' function to retrieve the balance of both accounts and print them.
+    // Create another Account object with an initial balance of $1000.
+    Account account2(1000.0);
 
-    // TODO: Deposit $500 into the first account.
+    // Test the 'getBalance' function to retrieve the balance of both accounts and print them.
+    std::cout << "Account 1 balance: " << account1.getBalance() << std::endl;
+    std::cout << "Account 2 balance: " << account2.getBalance() << std::endl;
 
-    // TODO: Withdraw $200 from the second account.
+    // Deposit $500 into the first account.
+    account1.deposit(500.0);
 
-    // TODO: Test the 'getBalance' function again to check the updated balances and print them.
+    // Withdraw $200 from the second account.
+    account2.withdraw(200.0);
 
-    // TODO: Set a new balance of $3000 for the first account using the 'setBalance' function.
+    // Test the 'getBalance' function again to check the updated balances and print them.
+    std::cout << "Account 1 balance after deposit: " << account1.getBalance() << std::endl;
+    std::cout << "Account 2 balance after withdrawal: " << account2.getBalance() << std::endl;
 
-    // TODO: Test the 'getBalance' function for the first account after setting the new balance.
+    // Set a new balance of $3000 for the first account using the 'setBalance' function.
+    account1.setBalance(3000.0);
 
-    // TODO: Test the 'withdraw' function for the second account, attempting to withdraw an amount greater than the balance.
+    // Test the 'getBalance' function for the first account after setting the new balance.
+    std::cout << "Account 1 balance after setting a new balance: " << account1.getBalance() << std::endl;
 
-    // TODO: Test the destructor for both accounts.
+    // Test the 'withdraw' function for the second account, attempting to withdraw an amount greater than the balance.
+    account2.withdraw(1500.0);
 
+    // Test the destructor for both accounts.
     return 0;
 }
